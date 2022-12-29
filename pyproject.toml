@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "home-noteebook-api"
+version = "0.1.0"
+description = ""
+authors = ["kevim <k.v.n.such@gmail.com>"]
+readme = "README.md"
+packages = [{include = "home_noteebook_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pymongo = "^4.3.3"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+fastapi = "^0.88.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
